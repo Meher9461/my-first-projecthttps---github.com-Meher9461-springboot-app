@@ -10,7 +10,6 @@ pipeline {
                 git 'https://github.com/Meher9461/my-first-projecthttps---github.com-Meher9461-springboot-app.git'
             }
         }
-    }
     
         stage('code-compile') {
             steps {
@@ -29,5 +28,6 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+    }
     
 }
